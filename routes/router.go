@@ -22,6 +22,14 @@ func SetupRouter() *gin.Engine {
 		adminRoutes.POST("/change-password", controllers.ChangePassword)
 		adminRoutes.POST("/reset-password", controllers.ResetPassword)
 	}
+	menuRoutes := r.Group("/menus")
+	{
+		menuRoutes.GET("/", controllers.MenuIndex)
+	}
+	vietqrRoutes := r.Group("/vietqr")
+	{
+		vietqrRoutes.GET("/create", controllers.CreateVietQRImage)
+	}
 
 	return r
 }

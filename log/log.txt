@@ -1,0 +1,137 @@
+2025/07/24 13:45:02 logger.go:26: [INFO] Danh sách menus trả về:
+[
+  {
+    "id": 1,
+    "parent_id": "",
+    "title": "Người dùng",
+    "url": "",
+    "icon": "fas fa-users",
+    "display_order": 1,
+    "status": 1,
+    "time_created": 0,
+    "time_updated": 0
+  },
+  {
+    "id": 2,
+    "parent_id": "1",
+    "title": "Danh sách người dùng",
+    "url": "/users",
+    "icon": "fas fa-list",
+    "display_order": 1,
+    "status": 1,
+    "time_created": 0,
+    "time_updated": 0
+  },
+  {
+    "id": 3,
+    "parent_id": "1",
+    "title": "Người dùng Premium 1",
+    "url": "/users/premium",
+    "icon": "fas fa-star",
+    "display_order": 2,
+    "status": 2,
+    "time_created": 0,
+    "time_updated": 1737016162
+  },
+  {
+    "id": 4,
+    "parent_id": "1",
+    "title": "Thêm người dùng",
+    "url": "/users/add",
+    "icon": "fas fa-user-plus",
+    "display_order": 3,
+    "status": 2,
+    "time_created": 0,
+    "time_updated": 0
+  },
+  {
+    "id": 5,
+    "parent_id": "",
+    "title": "Sản phẩm",
+    "url": "",
+    "icon": "",
+    "display_order": 1,
+    "status": 1,
+    "time_created": 0,
+    "time_updated": 0
+  },
+  {
+    "id": 6,
+    "parent_id": "5",
+    "title": "Danh sách sản phẩm",
+    "url": "/products",
+    "icon": "",
+    "display_order": 2,
+    "status": 1,
+    "time_created": 0,
+    "time_updated": 1737346116
+  },
+  {
+    "id": 7,
+    "parent_id": "",
+    "title": "MENU",
+    "url": "",
+    "icon": "fa fa-bars",
+    "display_order": 0,
+    "status": 1,
+    "time_created": 0,
+    "time_updated": 0
+  },
+  {
+    "id": 8,
+    "parent_id": "7",
+    "title": "Danh sách Menu",
+    "url": "/menus",
+    "icon": "",
+    "display_order": 0,
+    "status": 1,
+    "time_created": 0,
+    "time_updated": 0
+  },
+  {
+    "id": 11,
+    "parent_id": "7",
+    "title": "Thêm mới Menu",
+    "url": "/menus/show-form-create",
+    "icon": "",
+    "display_order": 0,
+    "status": 1,
+    "time_created": 1736995046,
+    "time_updated": 0
+  },
+  {
+    "id": 12,
+    "parent_id": "",
+    "title": "VietQr",
+    "url": "/viet-qr",
+    "icon": "fa fa-qrcode",
+    "display_order": 1,
+    "status": 1,
+    "time_created": 1752041731,
+    "time_updated": 1752042354
+  },
+  {
+    "id": 13,
+    "parent_id": "12",
+    "title": "Gen mã QR1",
+    "url": "/viet-qr/create",
+    "icon": "",
+    "display_order": 0,
+    "status": 1,
+    "time_created": 1752042391,
+    "time_updated": 1752044191
+  },
+  {
+    "id": 14,
+    "parent_id": "12",
+    "title": "Danh sách ngân hàng",
+    "url": "/viet-qr/banks",
+    "icon": "fa fa-university",
+    "display_order": 0,
+    "status": 1,
+    "time_created": 1752044245,
+    "time_updated": 0
+  }
+]
+2025/07/25 09:24:17 logger.go:26: [INFO] Login success - Email: nguyenvana@example.com, UserID: 11
+2025/07/25 09:30:14 logger.go:26: [INFO] Login success - Email: nguyenvana@example.com, UserID: 11

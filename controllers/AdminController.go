@@ -1,11 +1,14 @@
 package controllers
 
 import (
+	"fmt"
 	"gin-mvc/database"
 	"gin-mvc/models"
+	"gin-mvc/redis"
 	"gin-mvc/utils"
 	"github.com/gin-gonic/gin"
 	"golang.org/x/crypto/bcrypt"
+	"log"
 	"net/http"
 	"time"
 )
@@ -42,6 +45,15 @@ func Login(c *gin.Context) {
 		return
 	}
 
+	redisKey := fmt.Sprintf("token:%d", user.ID)
+	err = redis.Rdb.Set(redis.Ctx, redisKey, token, time.Hour*1).Err() // TTL = 1 giờ
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Không lưu được token vào Redis"})
+		return
+	}
+	log.Println("🔐 Token đã lưu Redis:", redisKey, token)
+
+	utils.LogInfo(fmt.Sprintf("Login success - Email: %s, UserID: %d", user.Email, user.ID))
 	c.JSON(http.StatusOK, gin.H{
 		"message": "Đăng nhập thành công",
 		"token":   token,
