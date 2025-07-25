@@ -135,3 +135,4 @@
 ]
 2025/07/25 09:24:17 logger.go:26: [INFO] Login success - Email: nguyenvana@example.com, UserID: 11
 2025/07/25 09:30:14 logger.go:26: [INFO] Login success - Email: nguyenvana@example.com, UserID: 11
+2025/07/25 10:22:56 logger.go:26: [INFO] Login success - Email: nguyenvana@example.com, UserID: 11
